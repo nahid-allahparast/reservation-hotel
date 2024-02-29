@@ -5,6 +5,10 @@ import { IoIosSearch } from "react-icons/io";
 import { useRef, useState } from "react";
 import { HiMinus, HiPlus } from "react-icons/hi";
 import useOutSideClick from "../../hooks/useOutSideClick";
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css"; // theme css file
+import { DateRange } from "react-date-range";
+import { format } from "date-fns";
 
 const Header = () => {
   const [destination, setDestination] = useState("");
@@ -14,6 +18,15 @@ const Header = () => {
     Children: 0,
     Room: 1,
   });
+  const [date, setDate] = useState([
+    { startDate: new Date(), endDate: new Date(), key: "selection" },
+  ]);
+  const [openDate, setopenDate] = useState(false);
+  // const dateRef = useRef();
+  // console.log(dateRef)
+
+  // useOutSideClick(dateRef, "dateDropDown", () => setopenDate(false));
+
   const optionsHandler = (name, operator) => {
     setOptions((prev) => {
       return {
@@ -35,9 +48,29 @@ const Header = () => {
           />
           <span className="seperator"></span>
         </div>
-        <div className="headerSearchItem">
+        <div style={{ cursor: "pointer" }} className="headerSearchItem">
           <TbCalendarEvent className="headerIcon blueIcon" />
-          <div className="dateDropDown">2024/08/01 to 2024/08/06</div>
+          <div
+            id="dateDropDown"
+            className="dateDropDown"
+            onClick={() => setopenDate(!openDate)}
+          >
+            {`${format(date[0].startDate, "MM/dd/yyy")} to ${format(
+              date[0].endDate,
+              "MM/dd/yyy"
+            )}`}
+          </div>
+
+          {openDate && (
+            <DateRange
+              className="date"
+              ranges={date}
+              onChange={(item) => setDate([item.selection])}
+              minDate={new Date()}
+              moveRangeOnFirstSelection={true}
+            />
+          )}
+
           <span className="seperator"></span>
         </div>
         <div className="headerSearchItem">
