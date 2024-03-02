@@ -12,6 +12,9 @@ const useOutSideClick = (ref, exceptionId, cb) => {
       }
     };
     document.addEventListener("mousedown", outSideClickHandler);
+    return () => {
+      document.removeEventListener("mousedown", outSideClickHandler);
+    };
   }, [ref]);
 };
 

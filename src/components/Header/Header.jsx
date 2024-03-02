@@ -41,6 +41,7 @@ const Header = () => {
         <div className="headerSearchItem">
           <MdLocationOn className="headerIcon locationIcon" />
           <input
+            className="textField"
             value={destination}
             onChange={setDestination}
             type="text"
@@ -77,7 +78,7 @@ const Header = () => {
           <FaUserPlus className="headerIcon blueIcon" />
           <div
             style={{ cursor: "pointer" }}
-            className="dateDropDown"
+            className="optionText"
             id="optionDropDown"
             onClick={() => setOpenOptions(!openOption)}
           >
