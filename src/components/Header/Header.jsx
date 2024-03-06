@@ -9,6 +9,7 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
+import { createSearchParams, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [destination, setDestination] = useState("");
@@ -26,7 +27,7 @@ const Header = () => {
   // console.log(dateRef)
 
   // useOutSideClick(dateRef, "dateDropDown", () => setopenDate(false));
-
+  const navigate = useNavigate();
   const optionsHandler = (name, operator) => {
     setOptions((prev) => {
       return {
@@ -34,6 +35,14 @@ const Header = () => {
         [name]: operator === "inc" ? options[name] + 1 : options[name] - 1,
       };
     });
+  };
+  const searchHandler = () => {
+    const encodedParams = createSearchParams({
+      date: JSON.stringify(date),
+      destination,
+      options: JSON.stringify(options),
+    });
+    navigate({ pathname: "/hotels", search: encodedParams.toString() });
   };
   return (
     <div className="header">
@@ -43,7 +52,7 @@ const Header = () => {
           <input
             className="textField"
             value={destination}
-            onChange={setDestination}
+            onChange={(e) => setDestination(e.target.value)}
             type="text"
             placeholder="where want you go?"
           />
@@ -96,7 +105,7 @@ const Header = () => {
           <span className="seperator"></span>
         </div>
         <div className="headerSearchItem">
-          <button className="headerSearchBtn">
+          <button className="headerSearchBtn" onClick={searchHandler}>
             <IoIosSearch className="headerIcon" />
           </button>
         </div>
