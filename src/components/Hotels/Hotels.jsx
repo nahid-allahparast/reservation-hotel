@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Loader from "../Loader";
 import { useHotel } from "../../context/HotelsProvider";
 
 const Hotels = () => {
-  const { isLoading, hotels } = useHotel();
+  const { id } = useParams();
+  const { isLoading, hotels, currentHotel } = useHotel();
   if (isLoading) return <Loader />;
   return (
     <div className="searchList">
@@ -14,7 +15,12 @@ const Hotels = () => {
             key={item.id}
             to={`/Hotels/${item.id}?lat=${item.latitude}&lng=${item.longitude}`}
           >
-            <div key={item.id} className="searchItem">
+            <div
+              key={item.id}
+              className={`searchItem ${
+                currentHotel.id === item.id && "current-hotel"
+              } `}
+            >
               <img src={item.picture_url.url} />
               <div className="searchItemDesc">
                 <p className="location">{item.smart_location}</p>
