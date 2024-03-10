@@ -9,7 +9,6 @@ import {
 } from "react-leaflet";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import useGeoLocation from "../../hooks/useGeoLocation";
-import { MdLocationOn } from "react-icons/md";
 
 const Map = ({ markerLocation }) => {
   const [mapCenter, setMapCenter] = useState([51.505, -0.09]);

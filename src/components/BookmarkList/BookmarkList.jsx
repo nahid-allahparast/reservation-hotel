@@ -4,7 +4,7 @@ import Loader from "../Loader";
 import ReactCountryFlag from "react-country-flag";
 
 const Bookmarklist = () => {
-  const { isLoading, bookmarks } = useBookmark();
+  const { isLoading, bookmarks,currentBookmark } = useBookmark();
   if (isLoading) return <Loader />;
   return (
     <div>
@@ -15,7 +15,7 @@ const Bookmarklist = () => {
             key={item.id}
             to={`${item.id}?lat=${item.latitude}&lng=${item.longitude}`}
           >
-            <div className="bookmarkItem">
+            <div className={`bookmarkItem ${item.id===currentBookmark.id && "current-bookmark"}`}>
               <div>
                 <strong>{item.cityName}</strong> &nbsp;
                 <span>{item.country}</span>
