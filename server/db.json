@@ -1352,30 +1352,39 @@
       "id": 5
     },
     {
-      "cityName": "A Dakhla Oasis",
-      "country": "Egypt",
-      "countryCode": "EG",
-      "latitude": "25.02090651422749",
-      "longitude": "29.09059588509316",
-      "host_location": "A Dakhla Oasis Egypt",
+      "cityName": "Hun",
+      "country": "Libya",
+      "countryCode": "LY",
+      "latitude": "26.106867564937406",
+      "longitude": "18.840594009546276",
+      "host_location": "Hun Libya",
+      "id": 6
+    },
+    {
+      "cityName": "Vert-le-Grand",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "48.57023646367932",
+      "longitude": "2.3506270740540507",
+      "host_location": "Vert-le-Grand France",
       "id": 7
     },
     {
-      "cityName": "Baba Kot",
-      "country": "Pakistan",
-      "countryCode": "PK",
-      "latitude": "28.43528783183169",
-      "longitude": "67.78003711374224",
-      "host_location": "Baba Kot Pakistan",
+      "cityName": "Eghezee",
+      "country": "Belgium",
+      "countryCode": "BE",
+      "latitude": "50.56885160270429",
+      "longitude": "4.817427328242575",
+      "host_location": "Eghezee Belgium",
       "id": 8
     },
     {
-      "cityName": "Abalessa",
-      "country": "Algeria",
-      "countryCode": "DZ",
-      "latitude": "21.42852622916777",
-      "longitude": "4.174804687500001",
-      "host_location": "Abalessa Algeria",
+      "cityName": "Eghezee",
+      "country": "Belgium",
+      "countryCode": "BE",
+      "latitude": "50.56885160270429",
+      "longitude": "4.817427328242575",
+      "host_location": "Eghezee Belgium",
       "id": 9
     }
   ]

@@ -9,12 +9,11 @@ import {
 } from "react-leaflet";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import useGeoLocation from "../../hooks/useGeoLocation";
+import useUrlLocation from "../../hooks/useUrlLocation";
 
 const Map = ({ markerLocation }) => {
   const [mapCenter, setMapCenter] = useState([51.505, -0.09]);
-  const [searchParams, setSearchParams] = useSearchParams();
-  const lat = searchParams.get("lat");
-  const lng = searchParams.get("lng");
+  const [lat, lng] = useUrlLocation();
   const {
     isLoading: isLoadingPositon,
     position: geoPosition,
