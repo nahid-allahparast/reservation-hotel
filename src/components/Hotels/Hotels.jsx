@@ -3,7 +3,6 @@ import Loader from "../Loader";
 import { useHotel } from "../../context/HotelsProvider";
 
 const Hotels = () => {
-  const { id } = useParams();
   const { isLoading, hotels, currentHotel } = useHotel();
   if (isLoading) return <Loader />;
   return (

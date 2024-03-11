@@ -1,5 +1,4 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import useFetch from "../hooks/useFetch";
 import axios from "axios";
 import toast from "react-hot-toast";
 
@@ -16,7 +15,7 @@ const BookmarksProvider = ({ children }) => {
       setIsLoading(true);
       try {
         const { data } = await axios.get(`${Based_URL}/bookmarks`);
-        setBookmarks(data)
+        setBookmarks(data);
       } catch (error) {
         console.log(error.message);
       } finally {
@@ -40,14 +39,24 @@ const BookmarksProvider = ({ children }) => {
   const createNewBookmark = async (newBookmark) => {
     try {
       const { data } = await axios.post(`${Based_URL}/bookmarks/`, newBookmark);
-      setCurrentBookmark(data);
-      console.log(data);
+      setBookmarks((prev) => [...prev, data]);
     } catch (error) {
       toast.error(error.message);
       console.log(error.message);
     } finally {
       setIsLoading(false);
     }
+  };
+  const deletHandler = async (id) => {
+    setIsLoading(true);
+    try {
+      await axios.delete(`${Based_URL}/bookmarks/${id}`);
+    } catch (error) {
+      toast.error(error.message);
+    } finally {
+      setIsLoading(false);
+    }
+    setBookmarks((prev) => prev.filter((item) => item.id !== id));
   };
 
   return (
@@ -58,6 +67,7 @@ const BookmarksProvider = ({ children }) => {
         currentBookmark,
         getBookmark,
         createNewBookmark,
+        deletHandler,
       }}
     >
       {children}

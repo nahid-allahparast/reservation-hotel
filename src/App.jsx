@@ -16,7 +16,6 @@ import AddNewBookmark from "./components/AddNewBookmark/AddNewbookmark";
 function App() {
   return (
     <BookmarksProvider>
-      {" "}
       <Hotelsprovider>
         <Toaster />
         <Header />

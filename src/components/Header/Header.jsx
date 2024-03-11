@@ -28,6 +28,7 @@ const Header = () => {
 
   // useOutSideClick(dateRef, "dateDropDown", () => setopenDate(false));
   const navigate = useNavigate();
+
   const optionsHandler = (name, operator) => {
     setOptions((prev) => {
       return {
@@ -48,7 +49,7 @@ const Header = () => {
     <div className="header">
       <div className="headerSearch">
         <div className="headerSearchItem">
-          <MdLocationOn className="headerIcon locationIcon" />
+          <MdLocationOn className="headerIcon redIcon" />
           <input
             className="textField"
             value={destination}

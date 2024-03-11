@@ -43,7 +43,8 @@
   height: 1.5rem;
   display: inline-block;
 }
-.locationIcon {
+
+.redIcon {
   color: var(--rose-500);
 }
 
