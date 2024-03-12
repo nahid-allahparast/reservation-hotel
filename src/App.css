@@ -6,6 +6,18 @@
   align-items: center;
   gap: 1rem;
 }
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navIcon {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
 .headerSearch {
   display: flex;
   width: 100%;

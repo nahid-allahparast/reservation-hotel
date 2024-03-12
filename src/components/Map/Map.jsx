@@ -7,7 +7,7 @@ import {
   useMap,
   useMapEvent,
 } from "react-leaflet";
-import { useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import useGeoLocation from "../../hooks/useGeoLocation";
 import useUrlLocation from "../../hooks/useUrlLocation";
 
@@ -19,7 +19,6 @@ const Map = ({ markerLocation }) => {
     position: geoPosition,
     getGeoPosition,
   } = useGeoLocation();
-  const { id } = useParams();
   useEffect(() => {
     if (lat && lng) {
       setMapCenter([lat, lng]);

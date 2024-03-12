@@ -1323,5 +1323,42 @@
       ]
     }
   ],
-  "bookmarks": []
+  "bookmarks": [
+    {
+      "cityName": "Bruay-la-Buissiere",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.506202895986",
+      "longitude": "2.5626470817459035",
+      "host_location": "Bruay-la-Buissiere France",
+      "id": 1
+    },
+    {
+      "cityName": "Szolnok",
+      "country": "Hungary",
+      "countryCode": "HU",
+      "latitude": "47.208091044697454",
+      "longitude": "20.163492007237313",
+      "host_location": "Szolnok Hungary",
+      "id": 2
+    },
+    {
+      "cityName": "Tura",
+      "country": "Russian Federation (the)",
+      "countryCode": "RU",
+      "latitude": "65.43280073434074",
+      "longitude": "97.595194876774",
+      "host_location": "Tura Russian Federation (the)",
+      "id": 3
+    },
+    {
+      "cityName": "Hassi Delaa",
+      "country": "Algeria",
+      "countryCode": "DZ",
+      "latitude": "33.53257819640929",
+      "longitude": "3.701242226000723",
+      "host_location": "Hassi Delaa Algeria",
+      "id": 4
+    }
+  ]
 }

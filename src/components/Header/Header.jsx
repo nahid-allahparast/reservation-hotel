@@ -10,6 +10,9 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import { createSearchParams, useNavigate } from "react-router-dom";
+import { CiHome } from "react-icons/ci";
+import { CiBookmarkCheck } from "react-icons/ci";
+import { CiLogin } from "react-icons/ci";
 
 const Header = () => {
   const [destination, setDestination] = useState("");
@@ -46,69 +49,76 @@ const Header = () => {
     navigate({ pathname: "/hotels", search: encodedParams.toString() });
   };
   return (
-    <div className="header">
-      <div className="headerSearch">
-        <div className="headerSearchItem">
-          <MdLocationOn className="headerIcon redIcon" />
-          <input
-            className="textField"
-            value={destination}
-            onChange={(e) => setDestination(e.target.value)}
-            type="text"
-            placeholder="where want you go?"
-          />
-          <span className="seperator"></span>
-        </div>
-        <div style={{ cursor: "pointer" }} className="headerSearchItem">
-          <TbCalendarEvent className="headerIcon blueIcon" />
-          <div
-            id="dateDropDown"
-            className="dateDropDown"
-            onClick={() => setopenDate(!openDate)}
-          >
-            {`${format(date[0].startDate, "MM/dd/yyy")} to ${format(
-              date[0].endDate,
-              "MM/dd/yyy"
-            )}`}
-          </div>
-
-          {openDate && (
-            <DateRange
-              className="date"
-              ranges={date}
-              onChange={(item) => setDate([item.selection])}
-              minDate={new Date()}
-              moveRangeOnFirstSelection={true}
+    <div className="nav">
+      <div className="navIcon">
+        <CiHome />
+        <CiBookmarkCheck />
+        <CiLogin />
+      </div>
+      <div className="header">
+        <div className="headerSearch">
+          <div className="headerSearchItem">
+            <MdLocationOn className="headerIcon redIcon" />
+            <input
+              className="textField"
+              value={destination}
+              onChange={(e) => setDestination(e.target.value)}
+              type="text"
+              placeholder="where want you go?"
             />
-          )}
-
-          <span className="seperator"></span>
-        </div>
-        <div className="headerSearchItem">
-          <FaUserPlus className="headerIcon blueIcon" />
-          <div
-            style={{ cursor: "pointer" }}
-            className="optionText"
-            id="optionDropDown"
-            onClick={() => setOpenOptions(!openOption)}
-          >
-            {options.Adult}Adult &bull; {options.Children}Children &bull;
-            {options.Room}Room
+            <span className="seperator"></span>
           </div>
-          {openOption && (
-            <GuestOptions
-              options={options}
-              setOpenOptions={setOpenOptions}
-              optionsHandler={optionsHandler}
-            />
-          )}
+          <div style={{ cursor: "pointer" }} className="headerSearchItem">
+            <TbCalendarEvent className="headerIcon blueIcon" />
+            <div
+              id="dateDropDown"
+              className="dateDropDown"
+              onClick={() => setopenDate(!openDate)}
+            >
+              {`${format(date[0].startDate, "MM/dd/yyy")} to ${format(
+                date[0].endDate,
+                "MM/dd/yyy"
+              )}`}
+            </div>
 
-          <span className="seperator"></span>
-        </div>
-        <div className="headerSearchItem">
-          <button className="headerSearchBtn" onClick={searchHandler}>
-            <IoIosSearch className="headerIcon" />
-          </button>
+            {openDate && (
+              <DateRange
+                className="date"
+                ranges={date}
+                onChange={(item) => setDate([item.selection])}
+                minDate={new Date()}
+                moveRangeOnFirstSelection={true}
+              />
+            )}
+
+            <span className="seperator"></span>
+          </div>
+          <div className="headerSearchItem">
+            <FaUserPlus className="headerIcon blueIcon" />
+            <div
+              style={{ cursor: "pointer" }}
+              className="optionText"
+              id="optionDropDown"
+              onClick={() => setOpenOptions(!openOption)}
+            >
+              {options.Adult}Adult &bull; {options.Children}Children &bull;
+              {options.Room}Room
+            </div>
+            {openOption && (
+              <GuestOptions
+                options={options}
+                setOpenOptions={setOpenOptions}
+                optionsHandler={optionsHandler}
+              />
+            )}
+
+            <span className="seperator"></span>
+          </div>
+          <div className="headerSearchItem">
+            <button className="headerSearchBtn" onClick={searchHandler}>
+              <IoIosSearch className="headerIcon" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
