@@ -1,55 +1,85 @@
 @import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.nav {
+header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.navIcon {
+  margin: 0 auto;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem 0;
 }
-.headerSearch {
+nav {
   display: flex;
-  width: 100%;
-  max-width: 900px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
-  border: 1px solid #ebe9e9;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 100;
+}
+.logo {
+  height:6rem;
+  width:6rem;
+  color: var(--primary-700);
+  padding: 1rem;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 1rem 0;
+  max-width: 1180px;
+}
+.navbar a {
+  padding: 0 1rem;
+}
+.search {
+  margin-top: 1rem;
+  max-width: 1180px;
+  width: 100%;
+}
+.headerSearch {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid #ebe9e9;
   border-radius: 3rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem; */
 }
 
-.headerSearchInput {
+/* .headerSearch:nth-child(2){width: 50%;} */
+/* .headerSearchInput {
   padding: 0.7rem 0.5rem;
   font-size: 1rem;
-}
-.headerSearchItem {
+} */
+.headerSearchItem:not(:nth-last-child(1)) {
   display: flex;
   align-items: center;
   position: relative;
+  border: 1px solid #ebe9e9;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 30%;
 }
-.headerSearchItem .seperator {
+/* .headerSearchItemWidth {
+  width: 30%;
+} */
+.headerSearch .seperator {
   display: inline-block;
   width: 1px;
   height: 40px;
   background-color: var(--text-300);
   margin: 0 1rem;
 }
-.textField {
+
+/* .headerSearch:not(:last-child) {
+  width: 30%;
+} */
+/* .textField {
   padding: 0.7rem 1rem;
   border-radius: 0.5rem;
-}
+} */
 .headerIcon {
   width: 1.5rem;
   height: 1.5rem;
@@ -280,7 +310,12 @@
   border: 3px solid var(--primary-700);
   border-radius: 1rem;
 }
-
+.textHidden {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
 @media screen and (max-width: 768px) {
   .sidebar {
     width: 50%;

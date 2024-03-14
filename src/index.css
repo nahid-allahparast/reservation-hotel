@@ -9,14 +9,15 @@
   --text-100: #f1f5f9;
   --text-300: #d1d5db;
   --white: #fff;
-  --primary-700: #2A2AE9;
-  --primary-600: #344EF4;
+  --primary-700: #2a2ae9;
+  --primary-600: #344ef4;
   --primary-100: #e0e7ff;
   --rose-500: #f43f5e;
+
 }
 body {
   min-height: 100vh;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 * {
   margin: 0;

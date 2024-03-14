@@ -9,10 +9,16 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
-import { createSearchParams, useNavigate } from "react-router-dom";
+import {
+  Link,
+  NavLink,
+  createSearchParams,
+  useNavigate,
+} from "react-router-dom";
 import { CiHome } from "react-icons/ci";
 import { CiBookmarkCheck } from "react-icons/ci";
 import { CiLogin } from "react-icons/ci";
+import { SiYourtraveldottv } from "react-icons/si";
 
 const Header = () => {
   const [destination, setDestination] = useState("");
@@ -49,30 +55,43 @@ const Header = () => {
     navigate({ pathname: "/hotels", search: encodedParams.toString() });
   };
   return (
-    <div className="nav">
-      <div className="navIcon">
-        <CiHome />
-        <CiBookmarkCheck />
-        <CiLogin />
-      </div>
-      <div className="header">
+    <header>
+      <nav>
+        <Link to="/">
+          <SiYourtraveldottv className="logo" />
+        </Link>
+        <div className="navbar">
+          <NavLink to="/">
+            <CiHome className="headerIcon" />
+          </NavLink>
+          <NavLink to="bookMarks">
+            <CiBookmarkCheck className="headerIcon" />
+          </NavLink>
+          <NavLink to="login">
+            <CiLogin className="headerIcon" />
+          </NavLink>
+        </div>
+      </nav>
+      <div className="search">
+        <h1>Where to?</h1>
         <div className="headerSearch">
-          <div className="headerSearchItem">
+          <div className="headerSearchItem ">
             <MdLocationOn className="headerIcon redIcon" />
             <input
-              className="textField"
+              className="textField textHidden"
               value={destination}
               onChange={(e) => setDestination(e.target.value)}
               type="text"
               placeholder="where want you go?"
             />
-            <span className="seperator"></span>
           </div>
-          <div style={{ cursor: "pointer" }} className="headerSearchItem">
+          <span className="seperator"></span>
+
+          <div style={{ cursor: "pointer" }} className="headerSearchItem ">
             <TbCalendarEvent className="headerIcon blueIcon" />
             <div
               id="dateDropDown"
-              className="dateDropDown"
+              className="dateDropDown textHidden"
               onClick={() => setopenDate(!openDate)}
             >
               {`${format(date[0].startDate, "MM/dd/yyy")} to ${format(
@@ -90,14 +109,14 @@ const Header = () => {
                 moveRangeOnFirstSelection={true}
               />
             )}
-
-            <span className="seperator"></span>
           </div>
-          <div className="headerSearchItem">
+          <span className="seperator"></span>
+
+          <div className="headerSearchItem ">
             <FaUserPlus className="headerIcon blueIcon" />
             <div
               style={{ cursor: "pointer" }}
-              className="optionText"
+              className="optionText textHidden"
               id="optionDropDown"
               onClick={() => setOpenOptions(!openOption)}
             >
@@ -111,9 +130,9 @@ const Header = () => {
                 optionsHandler={optionsHandler}
               />
             )}
-
-            <span className="seperator"></span>
           </div>
+          <span className="seperator"></span>
+
           <div className="headerSearchItem">
             <button className="headerSearchBtn" onClick={searchHandler}>
               <IoIosSearch className="headerIcon" />
@@ -121,7 +140,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
