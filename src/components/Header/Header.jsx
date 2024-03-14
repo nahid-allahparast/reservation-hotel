@@ -19,6 +19,8 @@ import { CiHome } from "react-icons/ci";
 import { CiBookmarkCheck } from "react-icons/ci";
 import { CiLogin } from "react-icons/ci";
 import { SiYourtraveldottv } from "react-icons/si";
+import { useAuth } from "../../context/AuthProvider";
+import { CiLogout } from "react-icons/ci";
 
 const Header = () => {
   const [destination, setDestination] = useState("");
@@ -37,6 +39,7 @@ const Header = () => {
 
   // useOutSideClick(dateRef, "dateDropDown", () => setopenDate(false));
   const navigate = useNavigate();
+  const { user, isAuthenticated, logout } = useAuth();
 
   const optionsHandler = (name, operator) => {
     setOptions((prev) => {
@@ -54,6 +57,9 @@ const Header = () => {
     });
     navigate({ pathname: "/hotels", search: encodedParams.toString() });
   };
+  const logoutHandler = () => {
+    logout();
+  };
   return (
     <header>
       <nav>
@@ -63,13 +69,23 @@ const Header = () => {
         <div className="navbar">
           <NavLink to="/">
             <CiHome className="headerIcon" />
+            <p>Home</p>
           </NavLink>
           <NavLink to="bookMarks">
             <CiBookmarkCheck className="headerIcon" />
+            <p>Bookmarks</p>
           </NavLink>
-          <NavLink to="login">
-            <CiLogin className="headerIcon" />
-          </NavLink>
+          {isAuthenticated ? (
+            <NavLink onClick={logoutHandler} to="login">
+              <CiLogout className="headerIcon" />
+              {user.name}
+            </NavLink>
+          ) : (
+            <NavLink to="login">
+              <CiLogin className="headerIcon" />
+              <p>Login</p>
+            </NavLink>
+          )}
         </div>
       </nav>
       <div className="search">

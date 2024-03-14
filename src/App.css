@@ -18,8 +18,8 @@ nav {
   z-index: 100;
 }
 .logo {
-  height:6rem;
-  width:6rem;
+  height: 6rem;
+  width: 6rem;
   color: var(--primary-700);
   padding: 1rem;
 }
@@ -31,8 +31,11 @@ nav {
   max-width: 1180px;
 }
 .navbar a {
-  padding: 0 1rem;
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
 }
+
 .search {
   margin-top: 1rem;
   max-width: 1180px;
@@ -164,7 +167,7 @@ nav {
 
 /*  location list */
 .nearbyLocation {
-  max-width: 1280px;
+  max-width: 1180px;
   margin: 2rem auto;
 }
 .nearbyLocation h2 {
