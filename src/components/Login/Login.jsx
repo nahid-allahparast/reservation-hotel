@@ -14,7 +14,7 @@ const Login = () => {
     else toast.error("please enter Email and Password");
   };
   useEffect(() => {
-    if (isAuthenticated) navigate("/");
+    if (isAuthenticated) navigate("/", { replace: true });
   }, [isAuthenticated, navigate]);
 
   return (

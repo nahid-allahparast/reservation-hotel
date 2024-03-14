@@ -17,18 +17,29 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 100;
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1180px;
+}
 .logo {
+  display: flex;
+  align-items: center;
+  color: var(--primary-700);
+  font-family:fantasy;
+  padding: 1rem 0;
+}
+.logo .img {
   height: 6rem;
   width: 6rem;
-  color: var(--primary-700);
-  padding: 1rem;
 }
 .navbar {
+  max-width: 1180px;
   width: 100%;
   display: flex;
   justify-content: end;
   padding: 1rem 0;
-  max-width: 1180px;
 }
 .navbar a {
   margin: 0 1rem;
@@ -42,6 +53,7 @@ nav {
   width: 100%;
 }
 .headerSearch {
+  margin-top: 2rem;
   width: 100%;
   display: flex;
   justify-content: space-between;

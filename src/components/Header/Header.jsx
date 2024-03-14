@@ -63,33 +63,36 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <Link to="/">
-          <SiYourtraveldottv className="logo" />
-        </Link>
-        <div className="navbar">
-          <NavLink to="/">
-            <CiHome className="headerIcon" />
-            <p>Home</p>
-          </NavLink>
-          <NavLink to="bookMarks">
-            <CiBookmarkCheck className="headerIcon" />
-            <p>Bookmarks</p>
-          </NavLink>
-          {isAuthenticated ? (
-            <NavLink onClick={logoutHandler} to="login">
-              <CiLogout className="headerIcon" />
-              {user.name}
+        <div className="nav">
+          <Link className="logo" to="/">
+            <SiYourtraveldottv className="img" />
+            <p>You can trust us</p>
+          </Link>
+          <div className="navbar">
+            <NavLink to="/">
+              <CiHome className="headerIcon" />
+              <p>Home</p>
             </NavLink>
-          ) : (
-            <NavLink to="login">
-              <CiLogin className="headerIcon" />
-              <p>Login</p>
+            <NavLink to="bookmarks">
+              <CiBookmarkCheck className="headerIcon" />
+              <p>Bookmarks</p>
             </NavLink>
-          )}
+            {isAuthenticated ? (
+              <NavLink onClick={logoutHandler} to="login">
+                <CiLogout className="headerIcon" />
+                {user.name}
+              </NavLink>
+            ) : (
+              <NavLink to="login">
+                <CiLogin className="headerIcon" />
+                <p>Login</p>
+              </NavLink>
+            )}
+          </div>
         </div>
       </nav>
       <div className="search">
-        <h1>Where to?</h1>
+        {/* <h1>Where to?</h1> */}
         <div className="headerSearch">
           <div className="headerSearchItem ">
             <MdLocationOn className="headerIcon redIcon" />
