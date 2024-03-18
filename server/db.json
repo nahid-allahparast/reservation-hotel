@@ -1,6 +1,15 @@
 {
   "hotels": [
     {
+      "picture_detaile": [
+        "https://ak-d.tripcdn.com/images/20020b0000005akswAB42_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0220x120009zuqh8k8663_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0226j12000aepjnk1DC39_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0221p120009l687277638_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0222x120009fgos3r05E3_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0225k12000aqm9t7jE99C_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0223s12000aqm9tdo828D_R_600_400_R5.webp"
+      ],
       "id": "6017649",
       "listing_url": "https://www.airbnb.com/rooms/6017649",
       "scrape_id": "20170402075052",
@@ -124,6 +133,12 @@
       ]
     },
     {
+      "picture_detaile": [
+        "https://ak-d.tripcdn.com/images/0226j12000aepjnk1DC39_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0221p120009l687277638_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0222x120009fgos3r05E3_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0223s12000aqm9tdo828D_R_600_400_R5.webp"
+      ],
       "id": "9192415",
       "listing_url": "https://www.airbnb.com/rooms/9192415",
       "scrape_id": "20170402075052",
@@ -157,7 +172,7 @@
         "height": 426,
         "url": "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/airbnb-listings/files/1293262ae799ac118c65bc0ef90bc3b8"
       },
-      "xl_picture_url": "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/airbnb-listings/files/1293262ae799ac118c65bc0ef90bc3b8",
+      "xl_picture_url": "https://ak-d.tripcdn.com/images/20020b0000005akswAB42_R_600_400_R5.webp",
       "host_id": "47820987",
       "host_url": "https://www.airbnb.com/users/show/47820987",
       "host_name": "Annabel",
@@ -217,9 +232,7 @@
         "Hangers",
         "Hair dryer",
         "Iron",
-        "Laptop friendly workspace",
-        "translation missing: en.hosting_amenity_49",
-        "translation missing: en.hosting_amenity_50"
+        "Laptop friendly workspace"
       ],
       "square_feet": null,
       "price": 95,
@@ -265,6 +278,15 @@
       ]
     },
     {
+      "picture_detaile": [
+        "https://ak-d.tripcdn.com/images/20020b0000005akswAB42_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0220x120009zuqh8k8663_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0226j12000aepjnk1DC39_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0221p120009l687277638_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0222x120009fgos3r05E3_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0225k12000aqm9t7jE99C_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0223s12000aqm9tdo828D_R_600_400_R5.webp"
+      ],
       "id": "743788",
       "listing_url": "https://www.airbnb.com/rooms/743788",
       "scrape_id": "20170402075052",
@@ -391,6 +413,15 @@
       ]
     },
     {
+      "picture_detaile": [
+        "https://ak-d.tripcdn.com/images/20020b0000005akswAB42_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0220x120009zuqh8k8663_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0226j12000aepjnk1DC39_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0221p120009l687277638_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0222x120009fgos3r05E3_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0225k12000aqm9t7jE99C_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0223s12000aqm9tdo828D_R_600_400_R5.webp"
+      ],
       "id": "13153299",
       "listing_url": "https://www.airbnb.com/rooms/13153299",
       "scrape_id": "20170402075052",
@@ -532,6 +563,15 @@
       ]
     },
     {
+      "picture_detaile": [
+        "https://ak-d.tripcdn.com/images/20020b0000005akswAB42_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0220x120009zuqh8k8663_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0226j12000aepjnk1DC39_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0221p120009l687277638_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0222x120009fgos3r05E3_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0225k12000aqm9t7jE99C_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0223s12000aqm9tdo828D_R_600_400_R5.webp"
+      ],
       "id": "277011",
       "listing_url": "https://www.airbnb.com/rooms/277011",
       "scrape_id": "20170402075052",
@@ -661,6 +701,15 @@
       ]
     },
     {
+      "picture_detaile": [
+        "https://ak-d.tripcdn.com/images/20020b0000005akswAB42_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0220x120009zuqh8k8663_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0226j12000aepjnk1DC39_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0221p120009l687277638_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0222x120009fgos3r05E3_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0225k12000aqm9t7jE99C_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0223s12000aqm9tdo828D_R_600_400_R5.webp"
+      ],
       "id": "13531067",
       "listing_url": "https://www.airbnb.com/rooms/13531067",
       "scrape_id": "20170402075052",
@@ -787,6 +836,15 @@
       ]
     },
     {
+      "picture_detaile": [
+        "https://ak-d.tripcdn.com/images/20020b0000005akswAB42_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0220x120009zuqh8k8663_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0226j12000aepjnk1DC39_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0221p120009l687277638_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0222x120009fgos3r05E3_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0225k12000aqm9t7jE99C_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0223s12000aqm9tdo828D_R_600_400_R5.webp"
+      ],
       "id": "13465532",
       "listing_url": "https://www.airbnb.com/rooms/13465532",
       "scrape_id": "20170402075052",
@@ -918,6 +976,15 @@
       ]
     },
     {
+      "picture_detaile": [
+        "https://ak-d.tripcdn.com/images/20020b0000005akswAB42_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0220x120009zuqh8k8663_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0226j12000aepjnk1DC39_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0221p120009l687277638_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0222x120009fgos3r05E3_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0225k12000aqm9t7jE99C_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0223s12000aqm9tdo828D_R_600_400_R5.webp"
+      ],
       "id": "13760586",
       "listing_url": "https://www.airbnb.com/rooms/13760586",
       "scrape_id": "20170402075052",
@@ -1049,6 +1116,15 @@
       ]
     },
     {
+      "picture_detaile": [
+        "https://ak-d.tripcdn.com/images/20020b0000005akswAB42_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0220x120009zuqh8k8663_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0226j12000aepjnk1DC39_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0221p120009l687277638_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0222x120009fgos3r05E3_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0225k12000aqm9t7jE99C_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0223s12000aqm9tdo828D_R_600_400_R5.webp"
+      ],
       "id": "7890890",
       "listing_url": "https://www.airbnb.com/rooms/7890890",
       "scrape_id": "20170402075052",
@@ -1188,6 +1264,15 @@
       ]
     },
     {
+      "picture_detaile": [
+        "https://ak-d.tripcdn.com/images/20020b0000005akswAB42_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0220x120009zuqh8k8663_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0226j12000aepjnk1DC39_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0221p120009l687277638_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0222x120009fgos3r05E3_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0225k12000aqm9t7jE99C_R_600_400_R5.webp",
+        "https://ak-d.tripcdn.com/images/0223s12000aqm9tdo828D_R_600_400_R5.webp"
+      ],
       "id": "9690677",
       "listing_url": "https://www.airbnb.com/rooms/9690677",
       "scrape_id": "20170402075052",
@@ -1359,6 +1444,15 @@
       "longitude": "3.701242226000723",
       "host_location": "Hassi Delaa Algeria",
       "id": 4
+    },
+    {
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.477191151702655",
+      "longitude": "-0.10309981880709529",
+      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)",
+      "id": 5
     }
   ]
 }

@@ -17,11 +17,13 @@ const Hotelsprovider = ({ children }) => {
     `${Based_URL}/hotels`,
     `q=${destination || ""}&accommodates_gte=${room || 1}`
   );
+
   const getSingleHotel = async (id) => {
     setIsLoadingCurrentHotel(true);
     try {
       const { data } = await axios.get(`${Based_URL}/hotels/${id}`);
       setCurrentHotel(data);
+  
     } catch (error) {
       toast.error(error.message);
     } finally {
